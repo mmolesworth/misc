@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rule ruleID="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="rule.xsd">
+
+  <publishedRuleID>123</publishedRuleID>
+  <version>1.0</version>
+  <lastChangedOn>2016-03-17T10:20:15</lastChangedOn>
+  <lastChangedBy>Mark Molesworth</lastChangedBy>
+  <!-- ruleType-->
+  <descriptiveName>My First Rule</descriptiveName>
+  <status>Draft</status>
+  <notes>Here are some notes ...</notes>
+  <ruleStatement>An urgent order must not be accepted if the order value is less than $30.</ruleStatement>
+  <!--ruleTemplate-->
+  <formalStatement>An urgent order must not be accepted if the order value is less than $30.</formalStatement>
+  <!--businessCategory-->
+  <!--ruleAuthorization-->
+  <!--ruleEnforcement-->
+  <!--keyword-->
+  <!--requirement-->
+  <!--model-->
+ 
+</rule>
