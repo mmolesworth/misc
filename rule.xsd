@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Definition of simple elements -->
+  
+<xs:element name="publishedRuleID" type="xs:integer"/>
+<xs:element name="version" type="xs:decimal"/>
+<xs:element name="lastChangedOn" type="xs:dateTime"/>
+<xs:element name="lastChangedBy" type="xs:string"/>
+<xs:element name="identifier" type="xs:string"/>
+<xs:element name="descriptiveName" type="xs:string"/>
+<xs:element name="status" type="xs:string"/>
+<xs:element name="notes" type="xs:string"/>
+<xs:element name="ruleStatement" type="xs:string"/>
+<xs:element name="formalStatement" type="xs:string"/>
+<xs:element name="description" type="xs:string"/>
+<xs:element name="fromDate" type="xs:date"/>
+<xs:element name="toDate" type="xs:date"/>
+<xs:element name="name" type="xs:string"/>
+<xs:element name="structure" type="xs:string"/>
+<xs:element name="type" type="xs:string"/>
+<xs:element name="authorizationReference" type="xs:string"/>
+<xs:element name="authorizationDate" type="xs:string"/>
+<xs:element name="position" type="xs:string"/>
+<xs:element name="contextType" type="xs:string"/>
+<xs:element name="contextDescription" type="xs:string"/>
+<xs:element name="requirementReference" type="xs:string"/>
+<xs:element name="modelVersion" type="xs:string"/>
+<xs:element name="modelType" type="xs:string"/>
+
+
+<!-- Definition of attributes -->
+<xs:attribute name="ruleID" type="xs:integer"/>
+<xs:attribute name="ruleTypeID" type="xs:integer"/>
+<xs:attribute name="templateID" type="xs:integer"/>
+<xs:attribute name="authorityID" type="xs:integer"/>
+<xs:attribute name="businessCategoryID" type="xs:integer"/>
+<xs:attribute name="authorityTypeID" type="xs:integer"/>
+<xs:attribute name="keywordID" type="xs:integer"/>
+<xs:attribute name="requirementID" type="xs:integer"/>
+<xs:attribute name="modelID" type="xs:integer"/>
+<xs:attribute name="ruleAuthorizationID" type="xs:integer"/>
+<xs:attribute name="enforcementTypeID" type="xs:integer"/>
+<xs:attribute name="ruleEnforcementID" type="xs:integer"/>
+
+
+<!-- Definition of complex elements -->
+
+<xs:element name="ruleAuthority">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="name"/>
+      <xs:element ref="position"/>
+    </xs:sequence>
+    <xs:attribute ref="authorityID"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="authorityType">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="type"/>
+      <xs:element ref="description"/>
+    </xs:sequence>
+    <xs:attribute ref="authorityTypeID"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="ruleAuthorization">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="ruleAuthority"/>
+      <xs:element ref="authorityType"/>
+      <xs:element ref="authorizationReference"/>
+      <xs:element ref="authorizationDate"/>
+    </xs:sequence>
+    <xs:attribute ref="ruleAuthorizationID"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="enforcementType">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="name"/>
+      <xs:element ref="description"/>
+    </xs:sequence>
+    <xs:attribute ref="enforcementTypeID"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="ruleEnforcement">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="enforcementType"/>
+      <xs:element ref="fromDate"/>
+      <xs:element ref="toDate"/>
+    </xs:sequence>
+    <xs:attribute ref="ruleEnforcementID"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="ruleType">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="name"/>
+      <xs:element ref="description"/>
+    </xs:sequence>
+    <xs:attribute ref="ruleTypeID"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="ruleTemplate">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="name"/>
+      <xs:element ref="structure"/>
+    </xs:sequence>
+    <xs:attribute ref="templateID"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="businessCategory">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="name"/>
+      <xs:element ref="description"/>
+    </xs:sequence>
+    <xs:attribute ref="businessCategoryID"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="keyword">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="name"/>
+    </xs:sequence>
+    <xs:attribute ref="keywordID"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="requirement">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="description"/>
+      <xs:element ref="requirementReference" />
+    </xs:sequence>
+    <xs:attribute ref="requirementID"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="model">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="name"/>
+      <xs:element ref="description"/>
+      <xs:element ref="modelVersion" />
+      <xs:element ref="modelType"/>
+    </xs:sequence>
+    <xs:attribute ref="modelID"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="rule">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="publishedRuleID"/>
+      <xs:element ref="version"/>
+      <xs:element ref="lastChangedOn"/>
+      <xs:element ref="lastChangedBy"/>
+      <xs:element ref="ruleType" minOccurs="0"/>
+      <xs:element ref="descriptiveName"/>
+      <xs:element ref="status"/>
+      <xs:element ref="notes"/>
+      <xs:element ref="ruleStatement"/>
+      <xs:element ref="ruleTemplate" minOccurs="0"/>
+      <xs:element ref="formalStatement"/>
+      <xs:element ref="businessCategory" minOccurs="0"/>
+      <xs:element ref="ruleAuthorization" minOccurs="0"/>
+      <xs:element ref="ruleEnforcement" minOccurs="0"/>
+      <xs:element ref="keyword" minOccurs="0"/>
+      <xs:element ref="requirement" minOccurs="0"/>
+      <xs:element ref="model" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute ref="ruleID" use="required"/>
+  </xs:complexType>
+</xs:element>
+</xs:schema>
