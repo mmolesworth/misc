@@ -1,0 +1,4 @@
+Notes
+
+Location of MS Office Interop DLLs:
+C:\Windows\assembly\GAC_MSIL
