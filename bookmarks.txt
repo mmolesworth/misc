@@ -7,3 +7,6 @@ https://developer.rackspace.com/blog/deploying-jupyterhub-for-education/
 
 Misc
 https://software-carpentry.org/
+http://aosabook.org/en/index.html
+http://www.lib.umd.edu/access/home
+https://en.wikipedia.org/wiki/OpenFormula
