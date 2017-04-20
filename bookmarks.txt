@@ -1,6 +1,12 @@
+Academic
+http://www.jesshamrick.com/
+
+Emacs
+https://realpython.com/blog/python/emacs-the-best-python-editor/
+http://www.jesshamrick.com/2012/09/18/emacs-as-a-python-ide/
 
 Python
-http://www.jesshamrick.com/
+
 
 Jupyter
 https://developer.rackspace.com/blog/deploying-jupyterhub-for-education/
