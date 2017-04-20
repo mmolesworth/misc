@@ -1,0 +1,7 @@
+
+
+Python
+http://www.jesshamrick.com/
+
+Jupyter
+https://developer.rackspace.com/blog/deploying-jupyterhub-for-education/
