@@ -1,5 +1,6 @@
 Academic
 http://www.jesshamrick.com/
+http://www.chris-kimble.com/Publications/Documents/Ting_2005a.pdf
 
 Emacs
 https://realpython.com/blog/python/emacs-the-best-python-editor/
