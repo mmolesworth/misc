@@ -19,6 +19,7 @@ http://www.lib.umd.edu/access/home
 https://en.wikipedia.org/wiki/OpenFormula
 http://cocosci.berkeley.edu/publications.php
 https://blog.tickpick.com/ticket-industry-ticket-resale-ticketmaster/
+http://www.onlineeconomy.org/how-does-ticketmaster-still-exist/
 
 Order Matching Systems
 http://stackoverflow.com/questions/13112062/which-are-the-order-matching-algorithms-most-commonly-used-by-electronic-financi
