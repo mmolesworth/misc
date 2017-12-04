@@ -1,0 +1,48 @@
+# EC2 Instance Configuration
+
+	OS		Debian9 Stretch
+	AMI ID		debian-stretch-hvm-x86_64-gp2-2017-10-08-48016-572488bb-fc09-4638-8628-e1e1d26436f4-ami-71b7750b.4 (ami-5cbe7326)
+	Instance Size	m4 Large
+	VPC ID		vpc-1415106d
+	Subnet ID	subnet-20193e0c	
+	EBS Size	30 GB
+	Name		development
+	Security Group	development-group
+	Inbound Rules	22 	/ SSH
+			443	/ HTTPS
+	AWS Keypair	mmolesworth.pem
+
+# Configure SSL Certificate with AWS Certificate Manager
+
+# Assign Elastic IP via Console
+
+# SSH into new instance
+## via Linux
+## Debian uses admin as user
+ssh -i ~/.ssh/aws-mmolesworth.pem admin@34.238.205.40
+
+	
+# Install Software and Tools
+## Update apt
+sudo apt-get update
+
+
+## Shell in a Box
+### prerequisites
+sudo apt-get install git libssl-dev libpam0g-dev zlib1g-dev dh-autoreconf openssl --force
+
+### install shellinabox
+#### ensure prot 4200 is open on AWS Security Group Inbound Rules
+#### shellinabox is configured to launch on startup - no need for addtional configuration
+sudo apt-get install shellinabox
+
+# configure ssl for shellinabox
+
+# add new user/password that can login via ssh 
+
+
+
+
+
+	
+	
