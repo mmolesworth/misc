@@ -1,18 +1,18 @@
-header { background-color: red; }
+header { background-color: #FF0000; }
 
 h1 {
-	color: white;
+	color: #FFFFFF;
 	text-align: center;
 
 }
 
-h2 { color: red; }
+h2 { color: #FF0000; }
 
 section { background-color: #ffe5e5; }
 
 a {
-	color: white;
-	background-color: green;
+	color: #FFFFFF;
+	background-color: #008000;
 }
 
 img { display: none; }
