@@ -1,5 +1,5 @@
 header { 
-	background-color: green;
+	background-color: #008000;
 	background-image: url('../images/flywheel.jpg');
 	padding: 25px;
 	display: block;
@@ -10,18 +10,18 @@ nav a {
 	display: inline-block;
 	margin: 10px;
 	border-radius: 5px;
-	text-decoration: underline white;
+	text-decoration: underline #FFFFFF;
 	padding: 10px 20px 15px 20px;
 
 }
 
 a.active { 
-    	background-color: white;
-	color: green;
+    	background-color: #FFFFFF;
+	color: #008000;
 }
 
 h1 {
-	color: white;
+	color: #FFFFFF;
 	text-align: center;
 
 }
@@ -34,12 +34,12 @@ body {
 }
 
 
-h2 { color: red; }
+h2 { color: #FF0000; }
 
 
 a {
-	color: white;
-	background-color: green;
+	color: #FFFFFF;
+	background-color: #008000;
 }
 
 img { 
@@ -71,16 +71,16 @@ section {
 }
 
 table {
-	color: blue;
-	border: 5px solid blue;
+	color: #0000FF;
+	border: 5px solid #0000FF;
 	border-radius: 0 0 25px 25px;
 	border-spacing: 5px;
 }
 
 th {
-	border: 5px solid blue;
-	background-color: blue;
-	color: white;
+	border: 5px solid #0000FF;
+	background-color: #0000FF;
+	color: #FFFFFF;
 }
 
 td { 
