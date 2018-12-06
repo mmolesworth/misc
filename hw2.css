@@ -1,3 +1,30 @@
+header { 
+	background-color: #008000;
+	background-image: url('../images/flywheel.jpg');
+	padding: 25px;
+	display: block;
+}
+
+
+nav a {
+	display: inline-block;
+	margin: 10px;
+	border-radius: 5px;
+	text-decoration: underline #FFFFFF;
+	padding: 10px 20px 15px 20px;
+
+}
+
+a.active { 
+    	background-color: #FFFFFF;
+	color: #008000;
+}
+
+h1 {
+	color: #FFFFFF;
+	text-align: center;
+
+}
 
 
 body {
