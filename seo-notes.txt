@@ -1,0 +1,131 @@
+seo browser plugins:
+woorank
+iseo
+seo site tools (chrome)
+ayima
+check my links
+web developer (firefox)
+google global (firefox; location specific)
+seoquake (chrome & firefox)
+
+wordpress seo plugins:
+wordpress seo
+all in one seo
+squirrly seo
+premium seo pack
+seo auto links
+redirections
+broken link checker
+bwp xml sitemaps
+
+schema.org
+
+each site needs a canonical tag
+
+duplicate content issues:
+copyscape
+deepcrawl
+screaming from
+google search console
+
+meta tags google understands:
+noindex - prevents page from being indexed
+nofollow - prevents google fro following links from the page
+
+see ajax crawling document in google deveopler console
+
+google quick answers:
+- queries with significant demand
+-- how to queries
+--- use keyword planned
+- high authority pages
+- bulleted list
+- how-to list
+- chronology matters
+- hreflang attribute setup
+- geo-targeting done correctly
+- lang and country via global elements
+
+website accessibility:
+- xml-sitemaps.com
+- use 301 redirects for 4040 errors
+- https may benefit search rankings
+- xml sitemaps
+	- pages crawled in priorty order
+	- keeps urls current for crawling
+	- pages are correctly segmented
+	- give clear indications of site priorities
+
+site architecture improvements:
+- performance analysis tools
+	- lipperhey
+	- site analyzer
+	- webbee seo spider tool
+- backlink analysis
+	- cognitive seo
+	- link research tools
+	- open link profile
+	- backlink explorer plugin (firefox)
+- broken links are the place to start
+	- portray quality to search engines
+	- internal links should have priority
+	- use nofollow sparingly / use robots.txt instead
+	- redirect to the most similar, next-best content
+	
+page load speed:
+- page speed test tools
+	- google page speed insights
+		- most common
+		- desktop & mobile performance
+		- recommendations on fixes
+	- yahoo yslow
+	- pingdom speed test
+	- dareboost
+	- webpagetest
+		- detailed analysis of load time
+		- allow load speed comparison with competitors
+	- gtmetrix
+		- page speed from google
+- page load speed impact ranking at the domain and page level
+- page speed load data can be overwhelming
+- categorize the impacts and prioritize
+- common issues
+	- js render blocking
+	- optimize css
+	- better browser caching
+	- minimizing sie of different elements
+
+website audit:
+	- crawl a site with a tool
+	- view source code
+		- title, meta, h1
+		- look for consistency / no obvious gap in layout / body copy
+	- google search console envirnoment
+	- create a baseline on which changes can be made
+	- google analytics / landing page report
+		- session, users, bouce rate
+	- ahrefs.com - diversity of anchors, broken backlinks, referral trends
+		- assess offsite elements that impact ranking
+	- structured data testing tool
+		- import source and validate structured data
+	- panguin tool
+		- assess trends in performance related to google engine updates
+
+competitive analysis tools:
+	- SEMrush
+	- keywordspy
+	- similarweb
+	- spyfu
+	- adgooroo
+
+countries where google doesn't dominate:
+	- czech republic
+	- hong kong
+	- japan
+	- south korea
+	- russia
+	- china
+- need to take into account nuances of engines in these countries
+- hreflang tag is critical for multilingual search
+
+
