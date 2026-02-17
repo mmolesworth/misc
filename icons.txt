@@ -1,3 +1,10 @@
 ☰
 
 ▪  Agencies
+
+
+PropertyValueText"▪  Home"All shared propertiesSame as Step 14 (Width, Height, Align, PaddingLeft, Size, FontWeight, border/radius all 0, etc.)FillIf(varActiveView = "Home", RGBA(255, 255, 255, 0.08), Color.Transparent)ColorIf(varActiveView = "Home", ColorPalette.TextOnDark, ColorPalette.TextOnDarkMuted)HoverFillIf(varActiveView = "Home", RGBA(255, 255, 255, 0.08), RGBA(255, 255, 255, 0.04))OnSelectSet(varActiveView, "Home")
+btnNavAgencies — same pattern with "Agencies"
+btnNavAuthorities — same pattern with "Authorities"
+btnNavEventLog — same pattern with "EventLog"
+Also update App.OnStart to change the default view:
